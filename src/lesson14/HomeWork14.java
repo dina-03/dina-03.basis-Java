@@ -1,6 +1,5 @@
 package lesson14;
 
-import sun.lwawt.macosx.CInputMethod;
 
 public class HomeWork14 {
     public static void main(String[] args) {
