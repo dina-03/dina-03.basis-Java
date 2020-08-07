@@ -19,6 +19,7 @@ public class MySchoolMath {
     }
 
     public static int leastCommonMultiple(int a, int b) {
+
         return a / greatestCommonDivisor(a, b) * b;
     }
 

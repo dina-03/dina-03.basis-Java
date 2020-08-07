@@ -3,7 +3,7 @@ package lesson30;
 public class ArrayInit {
     public static void main(String[] args) {
         //Первый способ
-        int[] var1 = new int[10];
+        int[] var1 = new int[1000];
         //Второй способ
         int[] var2 = new int[]{1, 5, 18};
         //Третий способ
@@ -15,7 +15,7 @@ public class ArrayInit {
         System.out.println(var2);
         System.out.println(var3);
         System.out.println(var4);*/
-        int[] var4 = createArray(10);
+        int[] var4 = createArray(1000);
         GoodMorningArraysDayTwo.myArrayPrint(var4);
     }
 
@@ -24,7 +24,6 @@ public class ArrayInit {
         for (int i = 0; i < n; i++) {
             result[i] = (int) (Math.random() * 100);
         }
-
         return result;
     }
 }

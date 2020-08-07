@@ -18,16 +18,16 @@ public class CoffeeVending {
 
         switch (customerValue) {
             case 11:
-                CoffeeRecipes.americano();
+                lesson07.CoffeeRecipesTwo.americano();
                 break;
             case 12:
-                CoffeeRecipes.cappuccino();
+                lesson07.CoffeeRecipesTwo.cappuccino();
                 break;
             case 13:
-                CoffeeRecipes.latte();
+                lesson07.CoffeeRecipesTwo.latte();
                 break;
             case 14:
-                CoffeeRecipes.hotWatter();
+                lesson07.CoffeeRecipesTwo.hotWatter();
                 break;
             default:
                 System.out.println("Извините, аппарат временно недоступен");
