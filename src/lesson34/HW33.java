@@ -35,7 +35,8 @@ public class HW33 {
         System.out.println(Arrays.toString(plusTwo(c01, c02)));
     }
 
-    /*16. Учитывая 2 массива int, каждая длина 2, возвращает новую длину массива 4, содержащего все свои элементы.*/
+    /*16. Учитывая 2 массива int, каждая длина 2, возвращает новую длину массива 4,
+    содержащего все свои элементы.*/
     private static int[] plusTwo(int[] a, int[] b) {
         int[] output = new int[a.length + b.length];
         for (int i = 0; i < a.length; i++) {
