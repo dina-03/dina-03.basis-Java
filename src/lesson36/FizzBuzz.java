@@ -33,6 +33,7 @@ public class FizzBuzz {
             } else {
                 output[i] = String.valueOf(i);
                 // System.out.println(i);
+                
             }
 
         }
