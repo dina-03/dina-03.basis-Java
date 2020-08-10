@@ -8,7 +8,7 @@ public class MyFirstCharInit {
         myPrintForCharArray(fillArrayRandomChar(myArray));
     }
 
-    private static char[] fillArrayRandomChar(char[] ccc) {
+    public static char[] fillArrayRandomChar(char[] ccc) {
         for (int i = 0; i < ccc.length; i++) {
             ccc[i] = (char) (Math.random() * 200);
         }
