@@ -8,8 +8,10 @@ public class FizzBuzz {
         System.out.println(fizzBuzz(5));// → "Buzz"
         System.out.println(fizzBuzz(15));// → "FizzBuzz"*/
         //fizzBuzz();
-        System.out.println(Arrays.toString(fizzBuzz(1, 6)));// → ["1", "2", "Fizz", "4", "Buzz"]
+        System.out.println(Arrays.toString(fizzBuzz(15, 25)));// → ["1", "2", "Fizz", "4", "Buzz"]
         split();
+        System.out.println(Arrays.toString(fizzBuzz(1, 6)));// → ["1", "2", "Fizz", "4", "Buzz"]
+
         fizzBuzz(1, 8);// → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]
         split();
         fizzBuzz(1, 11);// → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]
@@ -19,23 +21,25 @@ public class FizzBuzz {
     }
 
     private static String[] fizzBuzz(int min, int max) {
-        String[] output = new String[max - min];
-        for (int i = 0; i < max - min; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
+        int range = max - min;
+        String[] output = new String[range];
+        for (int i = 0; i < range; i++) {
+            if (min % 3 == 0 && min % 5 == 0) {
                 output[i] = "FizzBuzz";
                 // System.out.println("Fizz");
-            } else if (i % 3 == 0) {
+            } else if (min % 3 == 0) {
                 output[i] = "Fizz";
                 // System.out.println("Buzz");
-            } else if (i % 5 == 0) {
+            } else if (min % 5 == 0) {
                 output[i] = "Buzz";
                 // System.out.println("Fizzbuzz");
             } else {
-                output[i] = String.valueOf(i);
-                // System.out.println(i);
-                
-            }
+                output[i] = String.valueOf(min);
 
+                // System.out.println(i);
+
+            }
+            min++;
         }
         return output;
     }
