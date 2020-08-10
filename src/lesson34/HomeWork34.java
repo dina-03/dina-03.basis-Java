@@ -50,7 +50,7 @@ public class HomeWork34 {
         System.out.println(double23(d2));// → true
         System.out.println(double23(d3));// → false
     }
-  
+
     /* 23.Given an int array, return true if the array contains 2 twice, or 3 twice.
     The array will be length 0, 1, or 2.
     При наличии массива int, возвращаем true, если массив содержит 2 раза или 3 раза.
