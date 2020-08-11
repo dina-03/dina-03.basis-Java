@@ -32,7 +32,7 @@ public class MyLovelyArrays37 {
         myPrintForStringTwoD(myArray);
     }
 
-    private static void myPrintForStringTwoD(String[][] s) {
+    public static void myPrintForStringTwoD(String[][] s) {
         System.out.println("Двумерный массив s " + s.length + ", " + s[0].length);
 
         for (int i = 0; i < s.length; i++) {
