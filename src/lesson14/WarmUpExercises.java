@@ -64,9 +64,9 @@ public class WarmUpExercises {
         }
     }
 
-    public static String repeatSymbol(String symbol, int repiatNumber) {
+    public static String repeatSymbol(String symbol, int repeatNumber) {
         String output = "";
-        for (int i = 0; i < repiatNumber; i++) {
+        for (int i = 0; i < repeatNumber; i++) {
             output = output + symbol;
         }
         return output;
