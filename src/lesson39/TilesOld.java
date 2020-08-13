@@ -1,6 +1,6 @@
 package lesson39;
 
-public class Tiles {
+public class TilesOld {
     public static void main(String[] args) {
         //1 hour = 27 €
         // 1 tile = 30 * 20 cm
