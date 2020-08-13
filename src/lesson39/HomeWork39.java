@@ -35,9 +35,9 @@ public class HomeWork39 {
     /*площадь комнаты */
     public static double squarePremisesNatural() {
         double length, width, height;
-        length = 3.0;
-        width = 4.0;
-        height = 2.7;
+        length = 3.2;
+        width = 4.3;
+        height = 3.0;
         double squarePremises = ((length * 2) + (width * 2)) * height;
         double squarePremisesRound = Math.round(squarePremises);
         //System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
@@ -52,7 +52,7 @@ public class HomeWork39 {
 
     /*количество целых плиток  и сломанных*/
     private static void quantityTileTwo() {
-        double result = squarePremises();
+        double result = squarePremisesNatural();
         double wholeTile = Math.round(result - (result % 10));
         double brokenTiles = Math.round(result % 10);
         System.out.println("количество целых плиток : " + wholeTile + " и сломанных " + brokenTiles);
