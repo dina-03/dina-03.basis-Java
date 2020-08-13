@@ -32,7 +32,11 @@ public class HomeWork39 {
         return squareTile;
     }
 
-    public static double squarePremises(double length, double width, double height) {
+    public static double squarePremises() {
+        double length, width, height;
+        length = 3.0;
+        width = 6.0;
+        height = 2.7;
         double squarePremises = ((length * 2) + (width * 2)) * height;
         double squarePremisesRound = Math.round(squarePremises);
         // System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
@@ -42,11 +46,7 @@ public class HomeWork39 {
     }
 
     private static void quantityTileTwo() {
-      /*  double squarePremises = ((length * 2) + (width * 2)) * height;
-        double squarePremisesRound = Math.round(squarePremises);
-        System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
-        double result = squarePremisesRound / (findSquareTile(0.3, 0.2));*/
-        double result = squarePremises(3.0, 6.0, 2.7);
+        double result = squarePremises();
         double wholeTile = Math.round(result - (result % 10));
         double brokenTiles = Math.round(result % 10);
         System.out.println("количество целых плиток : " + wholeTile + " и сломанных " + brokenTiles);
@@ -54,11 +54,7 @@ public class HomeWork39 {
     }
 
     private static double quantityTile() {
-      /*  double squarePremises = ((length * 2) + (width * 2)) * height;
-        double squarePremisesRound = Math.round(squarePremises);
-        System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
-        double result = squarePremisesRound / (findSquareTile(0.3, 0.2));*/
-        double result = squarePremises(3.0, 6.0, 2.7);
+        double result = squarePremises();
         double wholeTile = Math.round(result - (result % 10));
         double brokenTiles = Math.round(result % 10);
         //System.out.println("количество плиток целых : " + wholeTile + " и сломанных " + brokenTiles);
