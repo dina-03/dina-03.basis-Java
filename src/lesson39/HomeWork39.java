@@ -17,8 +17,8 @@ public class HomeWork39 {
 
     private static void customerQuestion(double length, double width) {
         System.out.println("количество плиток: " + quantityTile(3.0, 6.0, 2.7) + " шт");
-        System.out.println("стоимость материала: " + priceMaterial(1.0, 500) + " €");
-        System.out.println("Стоимость рабочего времени: " + priceWorkHours(500) + " €");
+        System.out.println("стоимость материала: " + priceMaterial(1.0, 817) + " €");
+        System.out.println("Стоимость рабочего времени: " + priceWorkHours(817) + " €");
         System.out.println("Итоговая ориентировочная стоимость: " + totalEstimatedCost() + " €");
     }
 
@@ -54,6 +54,6 @@ public class HomeWork39 {
     }
 
     private static double totalEstimatedCost() {
-        return (priceMaterial(1.0, 500) + priceWorkHours(500));
+        return (priceMaterial(1.0, 817) + priceWorkHours(817));
     }
 }
