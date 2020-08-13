@@ -16,7 +16,7 @@ public class HomeWork39 {
     }
 
     private static void customerQuestion(double length, double width) {
-        System.out.println("количество плиток: " + quantityTile(3.0, 2.5, 2.7) + " шт");
+        System.out.println("количество плиток: " + quantityTile(3.0, 6.0, 2.7) + " шт");
         System.out.println("стоимость материала: " + priceMaterial(1.0, 500) + " €");
         System.out.println("Стоимость рабочего времени: " + priceWorkHours(500) + " €");
         System.out.println("Итоговая ориентировочная стоимость: " + totalEstimatedCost() + " €");
@@ -24,6 +24,7 @@ public class HomeWork39 {
 
     public static double findSquareTile(double lengthTile, double widthTile) {
         double squareTile = lengthTile * widthTile;
+        System.out.println("Площадь плитки: " + squareTile + " м²");
         return squareTile;
     }
 
@@ -31,10 +32,12 @@ public class HomeWork39 {
         double squarePremises = ((length * 2) + (width * 2)) * height;
         double squarePremisesRound = Math.round(squarePremises);
         System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
-
-
-        return squarePremisesRound / (findSquareTile(0.3, 0.2));
-
+        double result = squarePremisesRound / (findSquareTile(0.3, 0.2));
+        double wholeTile = Math.round(result - (result % 10));
+        double brokenTiles = Math.round(result % 10);
+        System.out.println("количество плиток целых : " + wholeTile + " и сломанных " + brokenTiles);
+        double allTile = wholeTile + brokenTiles;
+        return allTile;
     }
 
     private static double priceMaterial(double priceOneTile, double quantityTile) {
