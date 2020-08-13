@@ -12,13 +12,15 @@ public class HomeWork39 {
         //totalEstimatedCost = ?
         double length = 0.0;
         double width = 0.0;
-        customerQuestion(length, width);
+        double height = 0.0;
+        customerQuestion(length, width, height);
     }
 
-    private static void customerQuestion(double length, double width) {
-        System.out.println("общее количество плиток: " + quantityTile(3.0, 6.0, 2.7) + " шт");
-        System.out.println("стоимость материала: " + priceMaterial(1.0, 817) + " €");
-        System.out.println("Стоимость рабочего времени: " + priceWorkHours(817) + " €");
+    private static void customerQuestion(double length, double width, double height) {
+        quantityTileTwo();
+        System.out.println("общее количество плиток: " + quantityTile() + " шт"); //3.0, 6.0, 2.7
+        System.out.println("стоимость материала: " + priceMaterial(1.0) + " €");
+        System.out.println("Стоимость рабочего времени: " + priceWorkHours() + " €");
         System.out.println("Итоговая ориентировочная стоимость: " + totalEstimatedCost() + " €");
     }
 
@@ -28,24 +30,49 @@ public class HomeWork39 {
         return squareTile;
     }
 
-    private static double quantityTile(double length, double width, double height) {
+    public static double squarePremises(double length, double width, double height) {
         double squarePremises = ((length * 2) + (width * 2)) * height;
         double squarePremisesRound = Math.round(squarePremises);
-        System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
+        // System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
         double result = squarePremisesRound / (findSquareTile(0.3, 0.2));
+        //System.out.println(result);
+        return result;
+    }
+
+    private static void quantityTileTwo() {
+      /*  double squarePremises = ((length * 2) + (width * 2)) * height;
+        double squarePremisesRound = Math.round(squarePremises);
+        System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
+        double result = squarePremisesRound / (findSquareTile(0.3, 0.2));*/
+        double result = squarePremises(3.0, 6.0, 2.7);
         double wholeTile = Math.round(result - (result % 10));
         double brokenTiles = Math.round(result % 10);
-        System.out.println("количество плиток целых : " + wholeTile + " и сломанных " + brokenTiles);
+        System.out.println("количество целых плиток : " + wholeTile + " и сломанных " + brokenTiles);
+        double allTile = wholeTile + brokenTiles;
+    }
+
+    private static double quantityTile() {
+      /*  double squarePremises = ((length * 2) + (width * 2)) * height;
+        double squarePremisesRound = Math.round(squarePremises);
+        System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
+        double result = squarePremisesRound / (findSquareTile(0.3, 0.2));*/
+        double result = squarePremises(3.0, 6.0, 2.7);
+        double wholeTile = Math.round(result - (result % 10));
+        double brokenTiles = Math.round(result % 10);
+        //System.out.println("количество плиток целых : " + wholeTile + " и сломанных " + brokenTiles);
         double allTile = wholeTile + brokenTiles;
         return allTile;
     }
 
-    private static double priceMaterial(double priceOneTile, double quantityTile) {
+    private static double priceMaterial(double priceOneTile) {
+        double quantityTile = quantityTile();
         double sum = priceOneTile * quantityTile;
         return sum;
     }
 
-    private static double priceWorkHours(double quantityTile) {
+
+    private static double priceWorkHours() {
+        double quantityTile = quantityTile();
         double oneSquareMetre = 1 / findSquareTile(0.3, 0.2);
         double workingHour = 27.0;
         double result = Math.round(quantityTile / oneSquareMetre) * workingHour;
@@ -54,6 +81,6 @@ public class HomeWork39 {
     }
 
     private static double totalEstimatedCost() {
-        return (priceMaterial(1.0, 817) + priceWorkHours(817));
+        return (priceMaterial(1.0) + priceWorkHours());
     }
 }
