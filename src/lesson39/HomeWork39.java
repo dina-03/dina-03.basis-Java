@@ -10,13 +10,13 @@ public class HomeWork39 {
         //priceMaterial = ?
         //priceWorkHours = ?
         //totalEstimatedCost = ?
-        double length = 0.0;
+        /*double length = 0.0;
         double width = 0.0;
-        double height = 0.0;
-        customerQuestion(length, width, height);
+        double height = 0.0;*/
+        customerQuestion();
     }
 
-    private static void customerQuestion(double length, double width, double height) {
+    private static void customerQuestion() {
         System.out.println("площадь комнаты: " + squarePremisesNatur() + " м²");
         quantityTileTwo();
         System.out.println("общее количество плиток: " + quantityTile() + " шт");
@@ -39,8 +39,8 @@ public class HomeWork39 {
     /*площадь комнаты */
     public static double squarePremisesNatur() {
         double length, width, height;
-        length = 3.2;
-        width = 5.9;
+        length = 3.0;
+        width = 6.0;
         height = 2.9;
         double squarePremises = ((length * 2) + (width * 2)) * height;
         double squarePremisesRound = Math.round(squarePremises);
