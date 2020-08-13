@@ -10,14 +10,14 @@ public class HomeWork39 {
         //priceMaterial = ?
         //priceWorkHours = ?
         //totalEstimatedCost = ?
-        double length = 0.0;
-        double width = 0.0;
-        double height = 0.0;
+        double length = 3.0;
+        double width = 6.0;
+        double height = 2.7;
         customerQuestion(length, width, height);
     }
 
     private static void customerQuestion(double length, double width, double height) {
-        System.out.println("площадь комнаты: " + squarePremisesNatural() + " м²");
+        System.out.println("площадь комнаты: " + squarePremisesNatur() + " м²");
         quantityTileTwo();
         System.out.println("общее количество плиток: " + quantityTile() + " шт"); //3.0, 6.0, 2.7
         System.out.println("стоимость материала: " + priceMaterial() + " €");
@@ -32,12 +32,16 @@ public class HomeWork39 {
         return lengthTile * widthTile;
     }
 
+    public static void printSquarePremises() {
+        System.out.println("площадь комнаты: " + squarePremisesNatur() + " м²");
+    }
+
     /*площадь комнаты */
-    public static double squarePremisesNatural() {
+    public static double squarePremisesNatur() {
         double length, width, height;
-        length = 3.2;
-        width = 4.3;
-        height = 3.0;
+        length = 3.0;
+        width = 6.0;
+        height = 2.7;
         double squarePremises = ((length * 2) + (width * 2)) * height;
         double squarePremisesRound = Math.round(squarePremises);
         //System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
@@ -46,13 +50,13 @@ public class HomeWork39 {
 
     /*неокругленное количество плиток*/
     public static double squarePremises() {
-        double squarePremisesRound = Math.round(squarePremisesNatural());
+        double squarePremisesRound = Math.round(squarePremisesNatur());
         return squarePremisesRound / (findSquareTile());
     }
 
     /*количество целых плиток  и сломанных*/
     private static void quantityTileTwo() {
-        double result = squarePremisesNatural();
+        double result = squarePremises();
         double wholeTile = Math.round(result - (result % 10));
         double brokenTiles = Math.round(result % 10);
         System.out.println("количество целых плиток : " + wholeTile + " и сломанных " + brokenTiles);
