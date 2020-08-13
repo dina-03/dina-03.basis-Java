@@ -24,7 +24,9 @@ public class HomeWork39 {
         System.out.println("Итоговая ориентировочная стоимость: " + totalEstimatedCost() + " €");
     }
 
-    public static double findSquareTile(double lengthTile, double widthTile) {
+    public static double findSquareTile() {
+        double lengthTile = 0.3;
+        double widthTile = 0.2;
         double squareTile = lengthTile * widthTile;
         //System.out.println("Площадь плитки: " + squareTile + " м²");
         return squareTile;
@@ -34,7 +36,7 @@ public class HomeWork39 {
         double squarePremises = ((length * 2) + (width * 2)) * height;
         double squarePremisesRound = Math.round(squarePremises);
         // System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
-        double result = squarePremisesRound / (findSquareTile(0.3, 0.2));
+        double result = squarePremisesRound / (findSquareTile());
         //System.out.println(result);
         return result;
     }
@@ -73,7 +75,7 @@ public class HomeWork39 {
 
     private static double priceWorkHours() {
         double quantityTile = quantityTile();
-        double oneSquareMetre = 1 / findSquareTile(0.3, 0.2);
+        double oneSquareMetre = 1 / findSquareTile();
         double workingHour = 27.0;
         double result = Math.round(quantityTile / oneSquareMetre) * workingHour;
 
