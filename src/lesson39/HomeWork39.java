@@ -29,8 +29,7 @@ public class HomeWork39 {
     public static double findSquareTile() {
         double lengthTile = 0.3;
         double widthTile = 0.2;
-        double squareTile = lengthTile * widthTile;
-        return squareTile;
+        return lengthTile * widthTile;
     }
 
     /*площадь комнаты */
@@ -52,8 +51,7 @@ public class HomeWork39 {
         height = 2.7;
         double squarePremises = ((length * 2) + (width * 2)) * height;
         double squarePremisesRound = Math.round(squarePremises);
-        double result = squarePremisesRound / (findSquareTile());
-        return result;
+        return squarePremisesRound / (findSquareTile());
     }
 
     /*количество целых плиток  и сломанных*/
@@ -69,15 +67,13 @@ public class HomeWork39 {
         double result = squarePremises();
         double wholeTile = Math.round(result - (result % 10));
         double brokenTiles = Math.round(result % 10);
-        double allTile = wholeTile + brokenTiles;
-        return allTile;
+        return wholeTile + brokenTiles;
     }
 
     private static double priceMaterial() {
         double priceOneTile = 1.5;
         double quantityTile = quantityTile();
-        double sum = priceOneTile * quantityTile;
-        return sum;
+        return priceOneTile * quantityTile;
     }
 
 
@@ -85,9 +81,7 @@ public class HomeWork39 {
         double quantityTile = quantityTile();
         double oneSquareMetre = 1 / findSquareTile();
         double workingHour = 27.0;
-        double result = Math.round(quantityTile / oneSquareMetre) * workingHour;
-
-        return result;
+        return Math.round(quantityTile / oneSquareMetre) * workingHour;
     }
 
     private static double totalEstimatedCost() {
