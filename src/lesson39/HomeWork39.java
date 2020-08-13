@@ -24,7 +24,7 @@ public class HomeWork39 {
 
     public static double findSquareTile(double lengthTile, double widthTile) {
         double squareTile = lengthTile * widthTile;
-        System.out.println("Площадь плитки: " + squareTile + " м²");
+        //System.out.println("Площадь плитки: " + squareTile + " м²");
         return squareTile;
     }
 
