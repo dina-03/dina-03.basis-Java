@@ -10,9 +10,9 @@ public class HomeWork39 {
         //priceMaterial = ?
         //priceWorkHours = ?
         //totalEstimatedCost = ?
-        double length = 3.0;
-        double width = 6.0;
-        double height = 2.7;
+        double length = 0.0;
+        double width = 0.0;
+        double height = 0.0;
         customerQuestion(length, width, height);
     }
 
@@ -36,7 +36,7 @@ public class HomeWork39 {
     public static double squarePremisesNatur() {
         double length, width, height;
         length = 3.0;
-        width = 6.0;
+        width = 4.0;
         height = 2.7;
         double squarePremises = ((length * 2) + (width * 2)) * height;
         double squarePremisesRound = Math.round(squarePremises);
