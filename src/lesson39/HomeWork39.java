@@ -19,7 +19,7 @@ public class HomeWork39 {
     private static void customerQuestion(double length, double width, double height) {
         quantityTileTwo();
         System.out.println("общее количество плиток: " + quantityTile() + " шт"); //3.0, 6.0, 2.7
-        System.out.println("стоимость материала: " + priceMaterial(1.0) + " €");
+        System.out.println("стоимость материала: " + priceMaterial() + " €");
         System.out.println("Стоимость рабочего времени: " + priceWorkHours() + " €");
         System.out.println("Итоговая ориентировочная стоимость: " + totalEstimatedCost() + " €");
     }
@@ -50,19 +50,18 @@ public class HomeWork39 {
         double wholeTile = Math.round(result - (result % 10));
         double brokenTiles = Math.round(result % 10);
         System.out.println("количество целых плиток : " + wholeTile + " и сломанных " + brokenTiles);
-        double allTile = wholeTile + brokenTiles;
     }
 
     private static double quantityTile() {
         double result = squarePremises();
         double wholeTile = Math.round(result - (result % 10));
         double brokenTiles = Math.round(result % 10);
-        //System.out.println("количество плиток целых : " + wholeTile + " и сломанных " + brokenTiles);
         double allTile = wholeTile + brokenTiles;
         return allTile;
     }
 
-    private static double priceMaterial(double priceOneTile) {
+    private static double priceMaterial() {
+        double priceOneTile = 1.5;
         double quantityTile = quantityTile();
         double sum = priceOneTile * quantityTile;
         return sum;
@@ -79,6 +78,6 @@ public class HomeWork39 {
     }
 
     private static double totalEstimatedCost() {
-        return (priceMaterial(1.0) + priceWorkHours());
+        return (priceMaterial() + priceWorkHours());
     }
 }
