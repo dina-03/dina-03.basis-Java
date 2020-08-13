@@ -16,7 +16,7 @@ public class HomeWork39 {
     }
 
     private static void customerQuestion(double length, double width) {
-        System.out.println("количество плиток: " + quantityTile(3.0, 6.0, 2.7) + " шт");
+        System.out.println("общее количество плиток: " + quantityTile(3.0, 6.0, 2.7) + " шт");
         System.out.println("стоимость материала: " + priceMaterial(1.0, 817) + " €");
         System.out.println("Стоимость рабочего времени: " + priceWorkHours(817) + " €");
         System.out.println("Итоговая ориентировочная стоимость: " + totalEstimatedCost() + " €");
