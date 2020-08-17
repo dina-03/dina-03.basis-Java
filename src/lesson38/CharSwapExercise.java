@@ -31,7 +31,7 @@ public class CharSwapExercise {
         System.out.println();
     }
 
-    private static void myPrint(char[] input) {
+    public static void myPrint(char[] input) {
         for (int i = 0; i < input.length; i++) {
             System.out.print(input[i] + " ");
         }

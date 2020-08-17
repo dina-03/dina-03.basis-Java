@@ -2,9 +2,9 @@ package lesson39;
 
 public class HW39New {
     public static void main(String[] args) {
-        double length = 3.3; //длина
-        double width = 5.7;// ширина
-        double height = 2.9;//высота
+        double length = 3.5; //длина
+        double width = 5.3;// ширина
+        double height = 3.0;//высота
         double lengthTile = 0.3;//длина плитки
         double widthTile = 0.2;//ширина плитки
         double priceOneTile = 1.5;//цена одной плитки

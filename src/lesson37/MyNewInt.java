@@ -21,6 +21,6 @@ public class MyNewInt {
                         {116, 118}
                 }
         };
-
+        System.out.println(byteArray);
     }
 }
