@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class HomeWork43 {
     public static void main(String[] args) {
-        byte[] array = createByteArray(10);
+        byte[] array = createByteArray(20);
         System.out.println("Оригинал       " + Arrays.toString(array));
         byte[] newArray = myNewCopyArray(array);
         byte[] cocktailArray = myNewCopyArray(array);
@@ -19,8 +19,8 @@ public class HomeWork43 {
         byte end = (byte) (array.length - 1);
         while (start <= end) {
             boolean swapped = false;
-            for (int i = start; i > end; i++) {
-                if (array[i] > array[i + 1]) {
+            for (int i = start; i < end; i++) {
+                if (array[i] < array[i + 1]) {
                     byte temp = array[i];
                     array[i] = array[i + 1];
                     array[i + 1] = temp;
@@ -28,8 +28,8 @@ public class HomeWork43 {
                 }
             }
             end--;
-            for (int j = end; j < start; j--) {
-                if (array[j] < array[j - 1]) {
+            for (int j = end; j > start; j--) {
+                if (array[j] > array[j - 1]) {
                     byte temp = array[j - 1];
                     array[j - 1] = array[j];
                     array[j] = temp;
