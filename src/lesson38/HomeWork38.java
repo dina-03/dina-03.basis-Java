@@ -21,12 +21,12 @@ public class HomeWork38 {
     Скажем, что "промежуток" - это количество элементов между двумя включёнными.
     Одиночное значение имеет диапазон 1. Возвращает наибольший диапазон, найденный в данном массиве.
      (Эффективность не является приоритетом.) */
-    public static int maxSpan(int[] nums) {
+    public static int maxSpan(int[] numbers) {
         int result = 0;
         int tmp = 0;
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < nums.length; j++) {
-                if (nums[i] == nums[j]) {
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers.length; j++) {
+                if (numbers[i] == numbers[j]) {
                     tmp = j - i + 1;
                     result = Math.max(tmp, result);
                 }
