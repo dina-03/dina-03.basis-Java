@@ -9,7 +9,7 @@ public class CocktailSort {
         int[] newArray = myNewCopyArray(array);
         int[] newArray1 = myNewCopyArray(array);
         System.out.println("Копия массива " + Arrays.toString(newArray));
-        System.out.println("Это bubbleSort " + Arrays.toString(bubbleSort(newArray)));
+        System.out.println("Это bubbleSort         " + Arrays.toString(bubbleSort(newArray)));
         System.out.println("Коктейльная сортировка " + Arrays.toString(cocktailSort(newArray1)));
     }
 
@@ -19,7 +19,7 @@ public class CocktailSort {
         int end = array.length - 1;
         while (start <= end) {
             boolean swapped = false;
-            for (int j = start; j < end; j++) {
+            for (int j = start; j > end; j++) {
                 if (array[j] > array[j + 1]) {
                     int temp = array[j];
                     array[j] = array[j + 1];
@@ -28,7 +28,7 @@ public class CocktailSort {
                 }
             }
             end--;
-            for (int k = end; k > start; k--) {
+            for (int k = end; k < start; k--) {
                 if (array[k] < array[k - 1]) {
                     int temp = array[k - 1];
                     array[k - 1] = array[k];
