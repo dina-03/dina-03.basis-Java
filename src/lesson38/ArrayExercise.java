@@ -1,4 +1,4 @@
-package lesson43;
+package lesson38;
 
 public class ArrayExercise {
     public static void main(String[] args) {

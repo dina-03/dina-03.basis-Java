@@ -38,7 +38,8 @@ public class HomeWork1502 {
         System.out.println("Это метод toLowerCase: " + str.toLowerCase());
     }
 
-    /* Метод substring () возвращает новую строку, которая является подстрокой данной строки. */
+    /* Метод substring () возвращает новую строку,
+    которая является подстрокой данной строки. */
     public static void substring() {
         String output = "Проверка старого метода возвращения строки ";
         String input = output.substring(0, output.length() - 35);

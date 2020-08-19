@@ -74,7 +74,6 @@ public class HomeWork15Method {
     //Метод equalsIgnoreCase() — сравнивает данную строку с другой строкой, игнорируя регистр.
     // Две строки считаются равными, если они имеют одинаковую длину и соответствующие символы у двух строк равны,
     // игнорируя регистр букв.
-
     public static void equalsIgnoreCase(String anotherString) {
         String str1 = "Das ist ein Test";
         String str2 = str1;
