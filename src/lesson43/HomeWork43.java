@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class HomeWork43 {
     public static void main(String[] args) {
-        byte[] array = createByteArray(20);
+        byte[] array = createByteArray(10);
         System.out.println("Оригинал       " + Arrays.toString(array));
         byte[] newArray = myNewCopyArray(array);
         byte[] cocktailArray = myNewCopyArray(array);
         //System.out.println("Copy Array     " + Arrays.toString(newArray));
-        System.out.println("bubbleSort     " + Arrays.toString(bubbleSort(newArray)));
-        System.out.println("Cocktail Array " + Arrays.toString(cocktailSort(cocktailArray)));
+        System.out.println("\nbubbleSort     " + Arrays.toString(bubbleSort(newArray)));
+        System.out.println(" \nCocktail Array " + Arrays.toString(cocktailSort(cocktailArray)));
     }
 
     private static byte[] cocktailSort(byte[] array) {
@@ -38,6 +38,8 @@ public class HomeWork43 {
             }
             start++;
             count++;
+            System.out.print(" " + count);
+
             if (!swapped) {
                 break;
             }
@@ -65,8 +67,8 @@ public class HomeWork43 {
         }
         if (count > 0) {
             bubbleSort(array);
+            System.out.print(" " + count);
         }
-
         return array;
     }
 
