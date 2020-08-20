@@ -103,9 +103,8 @@ public class HomeWork44MethodAll {
     private static void indexOf(int ch) {
         String myStr = "Привет планета земля! я твоя землянка!!";
         System.out.println("Это метод indexOf");
-        System.out.println("первое появление буквы \"e\" в строке -Привет планета земля! я твоя землянка!!-, " +
-                "начиная поиск с позиции 5:");
-        System.out.println(myStr.indexOf("е", ch));
+        System.out.println("первое появление буквы \"e\" в строке \"Привет планета земля! я твоя землянка!!\", " +
+                "начиная поиск с позиции 5, результат: " + myStr.indexOf("е", ch));
     }
 
     /*Метод toCharArray() возвращает массив символов после преобразования строки в последовательность символов.
@@ -156,23 +155,13 @@ public class HomeWork44MethodAll {
     // Две строки считаются равными, если они имеют одинаковую длину и соответствующие символы у двух строк равны,
     // игнорируя регистр букв.
     public static void equalsIgnoreCase(String anotherString) {
-        String str1 = "Das ist ein Test";
-        String str2 = str1;
-        String str3 = new String("Все время приходится менять язык на клаве!!!");
-        String str4 = new String("DAS IST EIN TEST");
-        String str5 = "Надоело печатать один и тот же текст";
-        String str6 = "НАДОЕЛО ПЕЧАТАТЬ ОДИН И ТОТ ЖЕ ТЕКСТ";
-        boolean result, result1, result2;
+        String str1 = "Надоело печатать один и тот же текст";
+        String str2 = "НАДОЕЛО ПЕЧАТАТЬ ОДИН И ТОТ ЖЕ ТЕКСТ";
+        boolean result;
         result = str1.equalsIgnoreCase(str2);
-        System.out.println("Метод equalsIgnoreCase() — сравнивает данную строку с другой строкой, игнорируя регистр:");
-        System.out.println("str1 = str2 Antwort: " + result);
-        result1 = str1.equalsIgnoreCase(str3);
-        System.out.println("str1 = str3 Antwort: " + result1);
-        result2 = str1.equalsIgnoreCase(str4);
-        System.out.println("str1 = str4 Antwort: " + result2);
-        boolean test, test1;
-        test = str5.equalsIgnoreCase(str6);
-        System.out.println("Это проверка русского текста: " + test);
+        System.out.println("Метод equalsIgnoreCase() \nstr1 \"Надоело печатать один и тот же текст\"" +
+                "\nstr2 \"НАДОЕЛО ПЕЧАТАТЬ ОДИН И ТОТ ЖЕ ТЕКСТ\" — сравнивает данную строку с другой строкой, " +
+                "игнорируя регистр. Результат: " + result);
     }
 
     //Этот метод сравнивает эту строку с указанным объектом.
@@ -180,39 +169,38 @@ public class HomeWork44MethodAll {
     // и является строковым объектом, представляющим ту же последовательность символов, что и этот объект.
     public static void equals(String anObject) {
         String str1 = new String("Это проверка работы метода");
-        String str2 = str1;
-        String str3 = new String("Это проверка работы");
+        String str2 = new String("Это проверка работы");
         boolean result1, result2;
-        result1 = str1.equals(str2);
-        result2 = str2.equals(str3);
-        System.out.println("Этот метод сравнивает строки. Результат истинен когда аргумент не равен нулю и является " +
-                "строковым объектом");
-        System.out.println("true  -Это проверка работы метода- : " + result1);
-        System.out.println("false -Это проверка работы- " + result2);
+        result1 = str1.equals(str1);
+        result2 = str1.equals(str2);
+        System.out.println("метод equals: последовательность символов должна совпадать с /Это проверка работы метода/  ");
+        System.out.println("-Это проверка работы метода- : " + result1);
+        System.out.println("-Это проверка работы- " + result2);
     }
 
     //В следующем примере у нас есть две строки str1 и str2,
     // и мы проверяем, заканчиваются ли строки указанными суффиксами.
     public static void endsWith(String suffix) {
         String str1 = new String("Это первый string- тест");
-        String str2 = new String("Это второй string-тест");
+        String str2 = new String("Как хорошо отдыхать");
         boolean var1 = str1.endsWith("string");
-        boolean var2 = str2.endsWith("тест");
+        boolean var2 = str1.endsWith("тест");
         boolean var3 = str1.endsWith("Это");
-        boolean var4 = str2.endsWith("тест");
-        System.out.println("Это метод endsWith:");
-        System.out.println("Вывод метода на слово - string: " + var1);//false
-        System.out.println("Вывод метода на слово - тест: " + var2);//true
-        System.out.println("Вывод метода на слово - Это: " + var3);//false
-        System.out.println("Вывод метода на - тест: " + var4);//true
+        boolean var4 = str2.endsWith("отдыхать");
+        System.out.println("Это метод endsWith: \n str1 = Это первый string- тест \n str2 = Как хорошо отдыхать");
+        System.out.println("Строка заканчивается в str1 на - string: " + var1);//false
+        System.out.println("Строка заканчивается в str1 на - тест: " + var2);//true
+        System.out.println("Строка заканчивается в str1 на - Это: " + var3);//false
+        System.out.println("Строка заканчивается в str2 на - отдыхать: " + var4);//true
     }
 
     //проверка содержит ли конкретная строка определенную подстроку.
     public static void contains(CharSequence s) {
         String str = "Это пример метода работы contains ";
-        System.out.println("Это пример метода работы contains ");
-        System.out.println("Вывод метода на экран true -" + str.contains("работы contain"));
-        System.out.println("Вывод метода на экран false -" + str.contains("Example"));
+        System.out.println("Это пример метода работы contains / <-это строка string ");
+        System.out.println("Есть ли данная строка в string: /работы contain/ - есть -" + str.contains("работы " +
+                "contain"));
+        System.out.println("Есть ли данная строка в string: /Example/ - нет -" + str.contains("Example"));
     }
 
     //Метод replace() заменяет указанный символ (или подстроку) в строке на новый.

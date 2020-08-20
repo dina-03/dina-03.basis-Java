@@ -17,14 +17,14 @@ public class HomeWork39 {
     }
 
     private static void customerQuestion() {
-        System.out.println("площадь комнаты: " + squarePremisesNatural() + " м²");
+        System.out.println("площадь пола: " + squarePremisesNatural() + " м²");
         quantityTileTwo();
         System.out.println("общее количество плиток: " + quantityTile() + " шт");
         System.out.println("стоимость материала: " + priceMaterial() + " €");
         System.out.println("Стоимость рабочего времени: " + priceWorkHours() + " €");
         System.out.println("Итоговая ориентировочная стоимость: " + totalEstimatedCost() + " €");
         //System.out.println(quantityTileNatural());
-        System.out.println(quantityTile());
+        //System.out.println(quantityTile());
     }
 
     /*площадь плитки */
@@ -40,11 +40,11 @@ public class HomeWork39 {
 
     /*площадь комнаты */
     public static double squarePremisesNatural() {
-        double length, width, height;
+        double length, width;
         length = 3.3;
         width = 5.7;
-        height = 2.9;
-        double squarePremises = ((length * 2) + (width * 2)) * height;
+       // height = 2.9;
+        double squarePremises = length * width;
         double squarePremisesRound = Math.round(squarePremises);
         //System.out.println("площадь комнаты: " + squarePremisesRound + " м²");
         return squarePremisesRound;
@@ -74,7 +74,7 @@ public class HomeWork39 {
     }
 
     private static double priceMaterial() {
-        double priceOneTile = 1.5;
+        double priceOneTile = 3.0;
         double quantityTile = quantityTile();
         return priceOneTile * quantityTile;
     }

@@ -39,6 +39,8 @@ public class TilesApplication {
         System.out.println("Но если плитку положить поперёк, то ТАХДА");
         System.out.println("Всего потребуется плиток - " + tilesQuantity);
         System.out.println("Из них поломанных - " + tilesBroken);
+        System.out.println(tilesWholeQuantity);
+        System.out.println(tilesQuantity);
 
 
     }
