@@ -1,6 +1,6 @@
 package lesson44;
 
-public class HomeWork44 {
+public class HomeWork44MethodAll {
     public static void main(String[] args) {
         charAt();
         split();
