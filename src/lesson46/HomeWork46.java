@@ -107,8 +107,11 @@ public class HomeWork46 {
     private static char[] createCharArray(int length) {
         char[] array = new char[length];
         for (int i = 0; i < length; i++) {
-            //array[i] = getMeChar(256, 383);
-            array[i] = getMeChar(13500, 13999);
+            //array[i] = getMeChar(256, 383);// латинский алфавит
+            //array[i] = getMeChar(13500, 13999);// китайский
+            //array[i] = getMeChar(65166, 65256);// арабский
+            array[i] = getMeChar(1488, 1505);// арамейский
+
         }
         return array;
     }
