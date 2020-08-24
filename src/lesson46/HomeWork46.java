@@ -107,7 +107,8 @@ public class HomeWork46 {
     private static char[] createCharArray(int length) {
         char[] array = new char[length];
         for (int i = 0; i < length; i++) {
-            array[i] = getMeChar(256, 383);
+            //array[i] = getMeChar(256, 383);
+            array[i] = getMeChar(13500, 13999);
         }
         return array;
     }
