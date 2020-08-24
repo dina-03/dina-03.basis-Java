@@ -1,13 +1,13 @@
 package lesson18;
 
-public class HomeWork18 {
+public class HomeWork18Pyramid {
     public static void main(String[] args) {
         System.out.println("Вывод числа А B раз:");
         repetitionOfNumber(5, 7);
         split();
         increasingNumbers();
         split();
-        starsPyreamid(10, 10);
+        starsPyramid(10, 10);
         split();
         System.out.println(doubleChar("Dogs"));
 
@@ -17,7 +17,7 @@ public class HomeWork18 {
         System.out.println("-------------------");
     }
 
-    private static void starsPyreamid(int countLine, int n) {
+    private static void starsPyramid(int countLine, int n) {
         String star = "*";
         String line = "";
         String space = " ";

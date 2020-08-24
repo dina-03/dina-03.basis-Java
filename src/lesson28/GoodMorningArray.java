@@ -1,5 +1,7 @@
 package lesson28;
 
+import java.util.Arrays;
+
 //Массивы, Feld, Array
 public class GoodMorningArray {
     public static void main(String[] args) {
@@ -14,6 +16,8 @@ public class GoodMorningArray {
                 "Frankfurt" +
                 "Köln";
         System.out.println(test.length());
+        arrayInitialisation();
+        germanCities();
     }
 
     public static void myFirstArray() {
@@ -39,6 +43,7 @@ public class GoodMorningArray {
         String[] capitalsOfUdssr = new String[]{"Москва", "Минск", "Киев", "Кишинев", "Тбилиси"};
         char[] cyrillic = new char[]{'ж', 'л', 'ю', 'ч'};
         double[] time = new double[]{10.25, 15.45, 20.30};
+        System.out.println(Arrays.toString(fourSeasons));
     }
 
     public static void arraySecondInitialisation() {

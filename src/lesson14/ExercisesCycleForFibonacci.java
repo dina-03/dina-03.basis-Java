@@ -1,33 +1,20 @@
 package lesson14;
 
-/*Существует такая традиция:
-при приготовлении пельменей в один из них кладут монетку на счастье.
-Считается, что тому, кому попадется пельмень с монеткой, улыбнется удача.
-Представим, что у нас есть кастрюля, в которой лежит 10 пельменей.
-Один из них счастливый — а именно пятый пельмень.
-Давайте напишем программу, которая ищет счастливый пельмень.
-Программа перебирает пельмени в кастрюле по одному,
-и когда доходит до пятого пельменя —
-напишет “Вот счастливый пельмень!” и выходит из цикла. 
-_____________________
- Вывести на экран все числа от 1 до 100, которые делятся на 3 без остатка. 
---------------
-Необходимо, чтоб программа выводила на экран вот такую последовательность:
-myLine(100) ->
-7 14 21 28 35 42 49 56 63 70 77 84 91 98
-Вывести алфавит от A-Z по 4 шт. в строку
- */
-public class WarmUpExercises {
+public class ExercisesCycleForFibonacci {
     public static void main(String[] args) {
+        //Вывести на экран все числа от 1 до 100, которые делятся на 3 без остатка
+        //Необходимо, чтоб программа выводила на экран вот такую последовательность:
+        myLine(100); //->7 14 21 28 35 42 49 56 63 70 77 84 91 98
+        //Вывести алфавит от A-Z по 4 шт. в строку
         //findHappyDumpling();
         //findVariables();
         //myLine();
-        //alphabet();
-        System.out.println(repeatSymbol("z",10));
-        //fibonacci();
+        alphabet();
+        System.out.println(repeatSymbol("z", 10));
+        fibonacci();
        /* String variable1 = "Adrey";
         System.out.println(variable1.substring(0, 1));*/
-       // System.out.println(reversNumber(123));
+        // System.out.println(reversNumber(123));
     }
 
     public static void findHappyDumpling() {
@@ -46,8 +33,8 @@ public class WarmUpExercises {
         }
     }
 
-    public static void myLine() {
-        for (int i = 7; i < 100; i += 7) {
+    public static void myLine(int n) {
+        for (int i = 7; i < n; i += 7) {
             System.out.print(i + " ");
         }
     }
@@ -104,11 +91,12 @@ public class WarmUpExercises {
         int result = Integer.parseInt(output);
         return result;
     }
+
     /*Дано целое трехзначное число. Написать метод,
     который возвращает сумму разрядов этого числа, например:
     123 -> 6  (1+2+3)
     768 -> 21 (7+6+8) */
-    public static int sumNumbers(int n){
+    public static int sumNumbers(int n) {
 
         return 0;
     }

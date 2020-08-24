@@ -7,6 +7,11 @@ public class ClassWork45 {
         int[] a1 = {1, 2, 3, 4, 5};
         int[] a2 = {21, 22, 23, 24, 25};
         int[] c = united(a1, a2);
+        //создание итогового массива
+        //заполнить этот массив
+        //перенести элементы из первого массива в итоговый
+        //перенести элементы из второго массива в итоговый
+        //распечатать
         System.out.println(Arrays.toString(c));
         int[] d = arraySum(a1, a2);
         System.out.println(Arrays.toString(d));

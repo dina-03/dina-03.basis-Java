@@ -76,7 +76,7 @@ public class HomeWork14 {
     123 -> 6  (1+2+3)
     768 -> 21 (7+6+8)*/
     public static int sumNumbers(int n) {
-        String s = new Integer(n).toString();
+        String s = Integer.toString(n);
         char[] arr = s.toCharArray();
         int result = Character.getNumericValue(arr[0]) + Character.getNumericValue(arr[1])
                 + Character.getNumericValue(arr[2]);

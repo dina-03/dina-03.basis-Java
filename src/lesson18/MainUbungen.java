@@ -6,17 +6,17 @@ public class MainUbungen {
         //mySimpleWhile();
         //mySimpleDoWhile();
         //myNotSimpleWhile();
-        myMhetod();
+        myMethod();
     }
 
-    private static void myMhetod() {
+    private static void myMethod() {
         int x = 2;
         int y = 3;
         int z = 4;
-        if (x==2 && y <= 3)
+        if (x == 2 && y <= 3)
             System.out.println("правда");
         else
-        System.out.println("кривда");
+            System.out.println("кривда");
     }
 
     private static void myNotSimpleWhile() {

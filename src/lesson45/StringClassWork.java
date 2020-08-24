@@ -16,7 +16,7 @@ public class StringClassWork {
         String output = "";
         int index = 0;
         String symbol = "";
-        for (int i = 0; i < str.length() - 2; i += 3) {
+        for (int i = 0; i < str.length(); i += 3) {
             if (str.length() - i < 3) {
                 //nothing
             } else {
