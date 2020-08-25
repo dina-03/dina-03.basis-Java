@@ -12,6 +12,7 @@ public class StringExerciseGetSandwich {
         System.out.println(getSandwich("breadjambread"));// → "jam"
         System.out.println(getSandwich("xxbreadjambreadyy"));// → "jam"
         System.out.println(getSandwich("xxbreadyy"));// → ""
+        boolL();
     }
 
     private static String betweenBread(String str) {
@@ -41,5 +42,9 @@ public class StringExerciseGetSandwich {
             return str.substring(breadStart + 5, breadEnd);
         }
         return "";
+    }
+    public static void boolL(){
+        boolean [][] bool = new boolean[5][5];
+
     }
 }
