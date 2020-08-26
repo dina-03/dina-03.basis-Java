@@ -8,17 +8,9 @@ public class StringExerciseGetSandwich {
         //посчитать количество bread
         //что находится между bread
         // System.out.println(countBread("breadjambread"));
-        // betweenBread();
         System.out.println(getSandwich("breadjambread"));// → "jam"
         System.out.println(getSandwich("xxbreadjambreadyy"));// → "jam"
         System.out.println(getSandwich("xxbreadyy"));// → ""
-        boolL();
-    }
-
-    private static String betweenBread(String str) {
-
-
-        return "";
     }
 
     private static int countBread(String str) {
@@ -30,7 +22,6 @@ public class StringExerciseGetSandwich {
                 count++;
             }
         }
-
         return count;
     }
 
@@ -42,9 +33,5 @@ public class StringExerciseGetSandwich {
             return str.substring(breadStart + 5, breadEnd);
         }
         return "";
-    }
-    public static void boolL(){
-        boolean [][] bool = new boolean[5][5];
-
     }
 }
