@@ -16,9 +16,9 @@ public class HW33 {
         int[] ac2 = new int[]{1};
         int[] ad1 = new int[]{1, 2};
         int[] ad2 = new int[]{};
-        *//*start1([1, 2, 3], [1, 3]) → 2
+        start1([1, 2, 3], [1, 3]) → 2
           start1([7, 2, 3], [1]) → 1
-          start1([1, 2], []) → 1 *//*
+          start1([1, 2], []) → 1
         System.out.println(start1(ab1, ab2));
         System.out.println(start1(ac1, ac2));
         System.out.println(start1(ad1, ad2));*/

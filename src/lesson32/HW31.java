@@ -9,8 +9,6 @@ public class HW31 {
        /* System.out.println(commonEnd(a1, a2));// →true
         System.out.println(commonEnd(a1, a3));// →false
         System.out.println(commonEnd(a1, a4));// →true*/
-
-
        /* //  Дан массив длиной 3, верните новый массив с элементами в обратном порядке,
         //  например {1, 2, 3} становится {3, 2, 1}.
         int[] b1 = new int[]{1, 2, 3}; //[3,2,1]
@@ -21,12 +19,11 @@ public class HW31 {
         myArrayPrint(reverse3(b2));
         myArrayPrint(reverse3(b3));
         myArrayPrint(reverse3(b4));*/
-
         // Given 2 int arrays, a and b, each length 3,
         // return a new array length 2 containing their middle elements.
         //  Даны 2 массива int, a и b, каждый длиной 3, верните новый массив с длиной 2,
         //  содержащего среднее арифметическое элементов первоначальных массивов.
-       /* int[] mc1 = new int[]{1, 2, 3};
+      /*int[] mc1 = new int[]{1, 2, 3};
         int[] mc2 = new int[]{4, 5, 6};
         int[] kc1 = new int[]{7, 7, 7};
         int[] kc2 = new int[]{3, 8, 0};

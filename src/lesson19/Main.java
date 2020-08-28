@@ -6,9 +6,7 @@ public class Main {
     }
 
     public static String myReplace(String input, char toReplace, int index) {
-        input =
-                input.substring(0, index) + toReplace + input.substring(index + 1);
-
+        input = input.substring(0, index) + toReplace + input.substring(index + 1);
         return input;
     }
 
