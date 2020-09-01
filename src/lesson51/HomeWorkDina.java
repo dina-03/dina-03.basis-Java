@@ -1,4 +1,4 @@
-package lesson50;
+package lesson51;
 
 public class HomeWorkDina {
     public static void main(String[] args) {
