@@ -19,10 +19,10 @@ public class TryAndCry {
             // потому что у нас есть ошибка выше
             System.out.println("я никогда не увижу терминал");
         }catch (NumberFormatException ex){
-            System.out.println("exception");
+            System.out.println("exception caught");
         }finally {
-            System.out.println("nothing");
-            System.out.println("use Character.isDigit() ... ");
+            System.out.println("nothing happened");
+            System.out.println("use Character.isDigit() and for loop for solving issue ");
         }
     }
 
