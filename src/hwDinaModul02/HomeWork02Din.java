@@ -23,15 +23,15 @@ public class HomeWork02Din {
 
         }
     public static void usersName(String[] arrayName) {
-        String name = "";
         int count = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please introduce yourself: ");
-        name = scanner.next().toString();
+       String name = scanner.next();
         for (int i = 0; i < arrayName.length; i++) {
             if (arrayName[i].equals(name)) {
-                System.out.println("Hello, " + arrayName[i]);
                 count++;
+                System.out.println("Hello, " + arrayName[i]);
+                break;
             }
         }
         if (count == 0){
