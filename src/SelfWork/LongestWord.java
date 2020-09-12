@@ -1,5 +1,7 @@
 package SelfWork;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class LongestWord {
@@ -10,17 +12,23 @@ public class LongestWord {
 
         //looping for non empty strings
         int largestLength = 0;
-        String largestWord = "";
         String userinput = sc.nextLine();
+        String largestWord = Arrays.stream(userinput.split("[a-zA-z]")).max(Comparator.comparing(String::length).reversed()).orElse(null);
+
         while (userinput.equals("")) {
             System.out.println("Please insert a String: ");
             userinput = sc.nextLine();
         }
 
         for (String b : userinput.split(" ")) {
-            if (largestWord.length() == 0) {
+            if (isAlpha(b)) {
+                if (largestWord.length() == 0) {
+                    largestLength = b.length();
+                    largestWord = b;
+                }
+            /*(largestWord.length() == 0) {
                 largestLength = b.length();
-                largestWord = b;
+                largestWord = b;*/
             } else if (b.length() >= largestLength) {
                 largestLength = b.length();
                 largestWord = b;
@@ -31,7 +39,7 @@ public class LongestWord {
 
     }
 
-    public boolean isAlpha(String userinput) {
+    public static boolean isAlpha(String userinput) {
         char[] chars = userinput.toCharArray();
 
         for (char c : chars) {
