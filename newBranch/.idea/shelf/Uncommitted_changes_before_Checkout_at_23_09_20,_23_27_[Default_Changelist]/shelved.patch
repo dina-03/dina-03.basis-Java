@@ -1,0 +1,16 @@
+Index: ../src/SelfWork/GF.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package SelfWork;\n\npublic class GF {\n    public static void main(String[] args) {\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../src/SelfWork/GF.java	(revision 08daf91c6f3dc305309f6f4001502deeee244f6a)
++++ ../src/SelfWork/GF.java	(date 1600677157413)
+@@ -2,5 +2,6 @@
+ 
+ public class GF {
+     public static void main(String[] args) {
++       
+     }
+ }
