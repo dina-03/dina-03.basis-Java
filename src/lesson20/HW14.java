@@ -2,7 +2,7 @@ package lesson20;
 
 public class HW14 {
     public static void main(String[] args) {
-        /*System.out.println(minCat("Hello", "Hi"));//"loHi"
+        System.out.println(minCat("Hello", "Hi"));//"loHi"
         System.out.println(minCat("Hello", "java"));//"ellojava"
         System.out.println(minCat("java", "Hello"));//"javaello"
         System.out.println(doubleChar("The"));//   → "TThhee"
@@ -10,7 +10,7 @@ public class HW14 {
         System.out.println(doubleChar("Hi-There"));// → "HHii--TThheerree"
         System.out.println(loneSum(1, 2, 3));// → 6
         System.out.println(loneSum(3, 2, 3));// → 2
-        System.out.println(loneSum(3, 3, 3));// → 0*/
+        System.out.println(loneSum(3, 3, 3));// → 0
         System.out.println(sunDigit(123));
 
     }
